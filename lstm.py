@@ -6,6 +6,7 @@ from keras.layers.core import Dense, Activation, Dropout
 from keras.layers.recurrent import LSTM
 from keras.models import Sequential
 import matplotlib.pyplot as plt
+from six.moves import xrange
 
 
 warnings.filterwarnings("ignore")
