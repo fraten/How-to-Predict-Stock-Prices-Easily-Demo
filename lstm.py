@@ -99,7 +99,8 @@ def predict_sequence_full(model, data, window_size):
 def predict_sequences_multiple(model, data, window_size, prediction_len):
     #Predict sequence of 50 steps before shifting prediction run forward by 50 steps
     prediction_seqs = []
-    for i in xrange(len(data)/prediction_len):
+    a2=round(len(data)/prediction_len)
+    for i in xrange(a2):
         curr_frame = data[i*prediction_len]
         predicted = []
         for j in xrange(prediction_len):
